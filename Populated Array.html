@@ -1,0 +1,41 @@
+<html>
+    <heading></heading>
+    <body>
+        <script>
+       let numarr=[];
+    var size=parseInt(prompt("Enter the size of an array"));
+    iniarr(numarr, size);
+document.write("The populated array is<br>");
+for(var i=0; i<size;i++){
+    document.write("num["+i+"]=" +  numarr[i]+"<br>");
+        }
+
+
+add2(numarr);
+document.write("The populated array after adding 2 is<br>");
+for(var i=0; i<size;i++){
+    document.write("num["+i+"]=" +  numarr[i]+"<br>");
+        }
+
+
+
+    function iniarr(num, n){
+        for(var i=0; i<n;i++){
+            num[i]= parseInt(prompt("Enter the element of an array"));
+        }
+        
+    }
+
+    function add2(arr){
+        for(var i=0; i<arr.length;i++){
+            arr[i]+=2;
+        }
+    }
+            
+            
+
+            
+        
+        </script>
+    </body>
+</html>
